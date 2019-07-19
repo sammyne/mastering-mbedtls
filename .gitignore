@@ -47,3 +47,6 @@ build/
 
 # mbedtls source
 mbedtls/
+
+# more 
+tmpdir/
