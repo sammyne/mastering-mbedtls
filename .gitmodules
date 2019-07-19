@@ -1,0 +1,3 @@
+[submodule "examples/vendor/cppcodec"]
+	path = examples/vendor/cppcodec
+	url = https://github.com/tplgy/cppcodec.git
