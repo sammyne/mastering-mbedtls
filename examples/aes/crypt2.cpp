@@ -7,7 +7,6 @@
 #include "mbedtls/config.h"
 
 #include "mbedtls/aes.h"
-#include "mbedtls/platform_util.h"
 
 using namespace std;
 
