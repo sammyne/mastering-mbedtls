@@ -72,34 +72,34 @@ int main()
     }
 
     {
-        cout << "exporting private key to as PEM ..."<<endl;
+        cout << "\nexporting private key to as PEM ..." << endl;
 
         uint8_t out[16000];
-        auto status = mbedtls_pk_write_key_pem(&key,out,sizeof(out));
-        if(0!=status){
-            cout << "[PEM] failed: "<<status<<endl;
+        auto status = mbedtls_pk_write_key_pem(&key, out, sizeof(out));
+        if (0 != status)
+        {
+            cout << "[PEM] failed: " << status << endl;
             return status;
         }
 
-        cout << "\nprivate key goes as"<<endl;
-        cout << ((char *)out)<<endl;
+        cout << ((char *)out) << endl;
     }
 
     {
-        cout << "exporting public key to as PEM ..."<<endl;
+        cout << "\nexporting public key to as PEM ..." << endl;
 
         uint8_t out[16000];
-        auto status = mbedtls_pk_write_pubkey_pem(&key,out,sizeof(out));
-        if(0!=status){
-            cout << "[PEM] failed: "<<status<<endl;
+        auto status = mbedtls_pk_write_pubkey_pem(&key, out, sizeof(out));
+        if (0 != status)
+        {
+            cout << "[PEM] failed: " << status << endl;
             return status;
         }
 
-        cout << "\npublic key goes as"<<endl;
-        cout << ((char *)out)<<endl;
+        cout << ((char *)out) << endl;
     }
 
-    cout << "done"<<endl;
+    cout << "done" << endl;
 
     return 0;
 }
