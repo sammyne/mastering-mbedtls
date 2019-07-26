@@ -13,3 +13,20 @@ make
 ```
 
 执行上述命令后即可在`examples/build`的各个子文件夹生成相应的可执行程序展示示例代码的功能
+
+### Description
+- Type: Question
+- Priority: Blocker
+
+## Question
+
+**Why the new build of `ssl_client1` program failed?**
+
+**Steps to reproduce**  
+repository 
+
+### reproduction
+
+```
+git clone 
+```
