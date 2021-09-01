@@ -5,6 +5,7 @@ ExternalProject_Add(mbedtls
   GIT_REPOSITORY https://gitee.com/sammyne/mbedtls.git 
   GIT_TAG v2.27.0 
   INSTALL_DIR ${PROJECT_SOURCE_DIR}/third-party/_mbedtls 
+  CONFIGURE_COMMAND bash ${PROJECT_SOURCE_DIR}/scripts/patch_mbedtls.sh <SOURCE_DIR>
   CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${PROJECT_SOURCE_DIR}/third-party/_mbedtls -DENABLE_TESTING=Off
   BUILD_IN_SOURCE 1)
 
